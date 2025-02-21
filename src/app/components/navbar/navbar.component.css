@@ -1,0 +1,46 @@
+/* Generales */
+
+:root{
+    --gris: #f0f0f0cb;
+    --negro: #000000;
+    --amarillo: #DFBD69;
+    --dorado: #926F34;
+    --rojo01: #92000A;
+}
+  /* background: linear-gradient(90deg, #000428, #004e92); */
+  /* box-shadow: 15px 15px 25px rgba(0, 0, 0, .2); */
+  /*box-shadow: 15px 15px 30px rgba(0, 0, 0, .6);*/
+
+
+  .sombra{
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, .2);
+  }
+.bg-custom{
+    background-color: rgba(0, 0, 0, .8);
+    backdrop-filter: blur(5px);
+}
+
+.hover:hover{
+    color: #DFBD69;
+    transform: scale(1.2);
+}
+
+i:hover{
+    transform: scale(1.2);
+}
+a, i{
+    color: white;
+    transition: all .5s ease;
+}
+
+a:focus{
+    color: #DFBD69;
+    transition: all .5s ease;
+}
+.navbar{
+    z-index: 99;
+}
+.navbar-toggler{
+    color: white;
+    background-color: white;
+}

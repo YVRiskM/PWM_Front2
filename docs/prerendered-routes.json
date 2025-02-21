@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/PWM_Front": {},
+    "/PWM_Front/faculty": {},
+    "/PWM_Front/home": {},
+    "/PWM_Front/modulo": {},
+    "/PWM_Front/pwm": {}
+  }
+}

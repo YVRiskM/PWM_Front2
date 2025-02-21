@@ -1,0 +1,18 @@
+/* Generales */
+
+:root{
+    --gris: rgba(255, 255, 255, 0.7);
+    --amarillo: #e3bb5f;
+    --rojo01: #c50707c7;
+}
+  /* background: linear-gradient(90deg, #000428, #004e92); */
+  /* box-shadow: 15px 15px 25px rgba(0, 0, 0, .4); */
+  /*box-shadow: 15px 15px 30px rgba(0, 0, 0, .6);*/
+  
+.color01{
+    color: #c50707c7;
+}
+
+.color02{
+    color: #e3bb5f;
+}

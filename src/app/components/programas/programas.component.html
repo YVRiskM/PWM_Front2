@@ -1,0 +1,231 @@
+<section class="container mx-auto">
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <h2 class="py-4">Programas</h2>
+        </div>
+        <hr>
+
+        
+        <div class="col-10 col-sm-6 mx-auto mx-sm-0" *ngFor="let programa of programasService.programas">
+            
+            <h5 class="py-2 color01">{{programa.titulo}}</h5>
+            <p class="fs-5">{{programa.Duracion}}</p>
+            <p class="pb-1 fs-5 color02">{{programa.Modalidad}}</p>
+
+            <button routerLink="pwm" class="btn btn-danger">More info</button>
+            <hr>
+        </div> 
+
+        <!-- 
+        <div class="accordion col-10 mx-auto pb-5" id="accordionExample">
+
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="btn d-flex flex-column align-items-start w-100" routerLink="programa">
+                  <h4 class=" pt-2 color01">1. Private Wealth Management</h4>
+                  <p class="p-0">4 clases</p>
+                  <p class="fs-5 color02 m-0">Modalidad Presencial</p>
+                </button>
+              </div>
+            </div>
+
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"  >
+                    <h4 class=" pt-2 color01">2. Inteligencia Estratégica, Liderazgo y Negociación</h4>
+                    <p class="p-0">3 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Presencial</p>
+                </button>
+              </div>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+              
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h4 class=" pt-2 color01">3. Planeación Financiera y Retiro</h4>
+                    <p class="p-0">3 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Virtual</p>
+                </button>
+              </div>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <h4 class=" pt-2 color01">4. Filantropía</h4>
+                    <p class="p-0">2 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Presencial</p>
+                </button>
+              </div>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h4 class=" pt-2 color01">5. Insurance Strategies for Wealth Management</h4>
+                    <p class="p-0">3 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Híbrida</p>
+                </button>
+              </div>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    <h4 class=" pt-2 color01">6. Luxury & Art as Alternative Investments</h4>
+                    <p class="p-0">3 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Virtual</p>
+                </button>
+              </div>
+              <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    <h4 class=" pt-2 color01">7. Optimización Fiscal</h4>
+                    <p class="p-0">4 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Presencial</p>
+                </button>
+              </div>
+              <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                    <h4 class=" pt-2 color01">8. Mercados Financieros (Públicos y Alternativos)</h4>
+                    <p class="p-0">53 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Híbrida</p>
+                </button>
+              </div>
+              <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul class="list-unstyled">
+                    <li>8.A Mercados Públicos</li>
+                    <ul class="list-unstyled">
+                      <li class="ps-3">Parte I. FX</li>
+                      <li class="ps-3">Parte II. Fixed Income</li>
+                      <li class="ps-3"> Parte III. Mercados de Equities Locales y Globales</li> 
+                      <li class="ps-3">Parte IV. Derivados y Productos Estructurados</li>     
+                    </ul>
+                   
+                    <br>
+
+                    <li>8.B Mercados Privados & Alternativos</li>
+                    <ul class="list-unstyled">
+                      <li class="ps-3">Parte I. Private Debt</li>
+                      <li class="ps-3">Parte II. Digital Assets</li>
+                      <li class="ps-3">Parte III. Modelaje Financiero y Valuación de Empresas</li>
+                      <li class="ps-3">Parte IV. Real Estate</li>
+                      <li class="ps-3">Parte V. Private Equity & VC</li>
+                      <li class="ps-3">Parte VI. Hedge Funds</li>
+                      <li class="ps-3">Parte VII. Bonos Evergreen y su Impacto en la Gestión Patrimonial</li>
+                    </ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                    <h4 class=" pt-2 color01">9. Trading Economics, Análisis e Interpretación de Variable Económica y su Impacto</h4>
+                    <p class="p-0">8 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Híbrida</p>
+                </button>
+              </div>
+              <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    <h4 class=" pt-2 color01">10. Asset Allocation & Asset Management</h4>
+                    <p class="p-0">8 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Híbrida</p>
+                </button>
+              </div>
+              <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-unstyled">
+                    <li>10.1 Asset Allocation & Asset Management</li>
+                    <li>10.2 Asset & Portfolio Management</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                    <h4 class=" pt-2 color01">11. Family Offices</h4>
+                    <p class="p-0">8 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Híbrida</p>
+                </button>
+              </div>
+              <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ol class="list-unstyled">
+                    <li>11.1 Family Offices</li>
+                    <li>11.2 El Gobierno Familiar del Family Office</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                <button class="accordion-button d-flex flex-column align-items-start collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                    <h4 class=" pt-2 color01">12. Geopolitical Risk</h4>
+                    <p class="p-0">2 clases</p>
+                    <p class="fs-5 color02 m-0">Modalidad Híbrida</p>
+                </button>
+              </div>
+              <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+        </div>-->
+        
+
+    </div>
+</section>
